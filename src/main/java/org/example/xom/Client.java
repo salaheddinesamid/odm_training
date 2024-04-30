@@ -1,17 +1,56 @@
 package org.example.xom;
 
+import java.util.Date;
+
 public class Client
 {
     // Define client's information
-
+    public int id;
     public String fullName;
     public String nationalId;
+
+    public Date getFirstSale() {
+        return firstSale;
+    }
+
+    public void setFirstSale(Date firstSale) {
+        this.firstSale = firstSale;
+    }
+
+    public Date getLastSale() {
+        return lastSale;
+    }
+
+    public void setLastSale(Date lastSale) {
+        this.lastSale = lastSale;
+    }
+
+    public Date firstSale;
+    public Date lastSale;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(int discount) {
+        this.discount = discount;
+    }
+
     public int age;
     public String gender;
     public String email;
     public String phone;
     public String address;
     public boolean isMember;
+    public int discount;
 
     public String getFullName() {
         return fullName;
@@ -77,14 +116,15 @@ public class Client
         isMember = member;
     }
 
-    public int getNumberOfSales() {
-        return numberOfSales;
+
+
+    public int amountOfSales;
+
+    public int getAmountOfSales() {
+        return amountOfSales;
     }
 
-    public void setNumberOfSales(int numberOfSales) {
-        this.numberOfSales = numberOfSales;
+    public void setAmountOfSales(int amountOfSales) {
+        this.amountOfSales = amountOfSales;
     }
-
-    public int numberOfSales;
-
 }
